@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    team: kaizen
+    app: hello
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.14.2 
+  tolerations:
+  - key: "team"
+    operator: "Equal"
+    value: "dev"
+    effect: "NoSchedule"
+
