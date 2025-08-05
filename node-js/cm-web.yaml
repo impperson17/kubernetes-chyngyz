@@ -5,4 +5,3 @@ metadata:
 data:
   PORT: "3000"
   API_HOST: http://devops-api:3001
-
